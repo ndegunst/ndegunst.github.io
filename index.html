@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>A propos de moi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="./logo-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+	<script defer src="./scripts/scroll-animation.js"></script>
+	<script defer src="./scripts/piano.js"></script>
+	<script defer src="./scripts/sliderButton.js"></script>
+	<script defer src="./scripts/triangle.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  	<section class="head">
+		<div class="scrollmenu">
+			<ul class="menulist">
+				<li class="menulink"><a href="./index.html">A propos de moi</a></li>
+				<li class="menulink dropdown">
+					<a href="./annee1/page.html" class="dropbtn">Première année de BUT SD</a>
+					<div class="dropdown-content">
+						<a href="./annee1/page.html#SAE">Projets universitaires</a>
+						<a href="./annee1/page.html#annee1">Ressenti de l'année</a>
+						<a href="./annee1/page.html#projetsperso">Projets personnels</a>
+					</div>
+				</li>
+				<li class="menulink dropdown">
+					<a href="./annee2/page.html" class="dropbtn">Deuxième année de BUT SD</a>
+					<div class="dropdown-content">
+						<a href="./annee2/page.html#stage">Stage en Finlande</a>
+						<a href="./annee2/page.html#SAE2">Projets universitaires</a>
+						<a href="./annee2/page.html#annee2">Ressenti de l'année</a>
+						<a href="./annee2/page.html#projetsperso2-anchor">Projets personnels</a>
+					</div>
+				</li>
+				<li class="menulink dropdown">
+					<a href="./annee3/page.html" class="dropbtn">Troisième année de BUT SD</a>
+					<div class="dropdown-content">
+						<a href="./annee3/page.html#alternance">Mon Alternance</a>
+						<a href="./annee3/page.html#SAE3">Mes projets</a>
+						<a href="./annee3/page.html#annee3">Ressenti de l'année</a>
+					</div>
+				</li>
+				<li class="menulink"><a class="button" href="./cv.pdf">Télécharger mon CV</a></li>
+			</ul>
+		</div>
+		
+		
+
+    <div class="Banner">
+
+
+    	<div class="fade-in-image">
+    		<img class="profile-pic" src="./images/accueil/profil.jfif" alt="photo de profil">
+    	</div>
+
+    	<div class="typewriter">	<h1>Bonjour, je m'appelle Noah de Gunst.</h1></div>
+
+    </div>
+
+    </section>
+	
+    <div class="spacer wave "></div>
+
+    
+    	<H1> Mes centres d'intéret</H1>
+
+
+    	<section class="artistes">
+
+    		<H2>La musique</H2>
+    		<hr class = "breakline">
+
+    		<H5> La musique et le rap américain en particulier m'attire par leur capacité à raconter des histoires et à exprimer des émotions, ainsi que son influence culturelle et sociale importante. J'aime explorer de nouveaux artistes et découvrir la variété de sous-genres de rap qui existent.</H5>
+
+    		<H3> Voici quelques artistes que j'écoute régulièrement : </H3>
+    		
+    		<div class="tableArtistes">
+  				<div class="artiste eminem reveal"> <img src="./images/accueil/artists/eminem.png" class="artist_picture" alt="Eminem">
+  					<H4>Eminem</H4>
+  					<p class="citation"> "Rien n'a jamais réuni autant de personnes de tous les horizons que le hip-hop."</p>
+  				</div>
+ 				<div class="artiste kendrick reveal"> <img src="./images/accueil/artists/kendrick.png" class="artist_picture" alt="Kendrick Lamar">
+  					<H4>Kendrick Lamar</H4>
+  					<p class="citation"> "Et je te dirai quel est exactement le prix d'un dollar, c'est le prix pour avoir une place au Paradis."</p>
+  				</div>
+  				<div class="artiste jcole reveal"> <img src="./images/accueil/artists/Jcole.png" class="artist_picture" alt="J.Cole">
+  					<H4>J.Cole</H4>
+  					<p class="citation"> "Je me mets beaucoup de pression. Je pense que quelque chose n'est pas assez bien et je ne m'arrêterai pas tant que je n'aurai pas l'impression d'avoir réussi. "</p>
+  				</div>
+			
+			</div>
+		</section>
+		<section class="clavier">
+			
+			<h5> Je possède également un clavier qui me permet de jouer mes musiques préférées et d'exprimer ma créativité sans limites. En complément de mon expérience musicale, 
+				j'ai également intégré un clavier interactif ci-dessous donc laissez libre votre créativité.</h3>
+
+			<div class="keyboard-wrapper">
+				<div class="keyboard reveal">
+					<header class="keyboard-header">
+						<div class="column volume-slider">
+							<span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
+						</div>
+
+						<div class="column keys-checkbox">
+							<span>Montrer les touches</span> <input type="checkbox" checked>
+						</div>
+					</header>
+
+					<ul class="piano-keys">
+						<li class="key white" data-key="q"><span>q</span></li>
+						<li class="key black" data-key="w"><span>w</span></li>
+						<li class="key white" data-key="s"><span>s</span></li>
+						<li class="key black" data-key="x"><span>x</span></li>
+						<li class="key white" data-key="d"><span>d</span></li>
+						<li class="key white" data-key="c"><span>c</span></li>
+						<li class="key black" data-key="f"><span>f</span></li>
+						<li class="key white" data-key="v"><span>v</span></li>
+						<li class="key black" data-key="g"><span>g</span></li>
+						<li class="key white" data-key="b"><span>b</span></li>
+						<li class="key black" data-key="h"><span>h</span></li>
+						<li class="key white" data-key="n"><span>n</span></li>
+						<li class="key white" data-key="j"><span>j</span></li>
+						<li class="key black" data-key="k"><span>k</span></li>
+						<li class="key white" data-key=";"><span>;</span></li>
+						<li class="key black" data-key="l"><span>l</span></li>
+						<li class="key white" data-key="m"><span>m</span></li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+		<section class="poeme">
+
+			<H5> Depuis environ un an, j’ai commencé à écrire sur ce que je ressens : mes émotions, mes pensées, mes états d’âme… Souvent, ces écrits sont inspirés par les artistes mentionnés ci-dessus
+				 et parfois, mes mots prennent une tournure poétique.
+				 Si vous souhaitez découvrir l’un de mes textes les plus aboutis, survolez le livre avec votre souris et plongez dans les différentes vies que j’ai traversées. </H5>
+
+		<div class="component">
+				<ul class="align">
+					<li>
+						<figure class='book'>
+
+							<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign blue">
+										<h4>Réincarnation</h4>
+	
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+							<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="./reincarnation.pdf">Lire</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+							<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+						</figure>
+					</li>
+				</ul>
+			</div>
+
+		
+  		</section>
+	<a href="#" class="slider-button"></a>
+
+	<footer class="footer">
+
+		<h3>Contactez-moi :</h3>
+
+		<div class="footer-wrapper">
+		<div class ="footer-column">
+			
+			<a href="mailto:noah.de.gunst@etu.univ-poitiers.fr">
+				<img src="./images/icones/gmail.png" alt="e-mail"> 
+				<span>noah.de.gunst@etu.univ-poitiers.fr</span>
+			</a>
+
+		</div>
+
+		<div class ="footer-column">
+			
+			<a href="tel:0632056358">
+				<img src="./images/icones/phone.png" alt="phone"> 
+				<span>06-38-05-63-58</span>
+			</a>
+
+		</div>
+		<div class ="footer-column">
+			
+			<a href="https://www.linkedin.com/in/noah-de-gunst-663b00209/">
+				<img src="./images/icones/linkedin.png" alt="linkedin">
+				<span>Noah de Gunst</span>
+			</a>
+		</div>
+		</div>
+	</footer>
+  </body>
+</html>

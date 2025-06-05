@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuxième année</title>
+    <link rel="icon" href="./../logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./../style.css">
+    <script src="./../scripts/scroll-animation.js"></script>
+    <script src="./../scripts/scroll-animation-submenu.js" defer></script>
+    <script  src="./../scripts/sliderButton.js" defer></script>
+    <script src="./../scripts/SAE-annee2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pug/3.0.2/pug.min.js"></script>
+</head>
+<body>
+    
+    
+    <section id="stage">
+        <div class="scrollmenu">
+            <ul class="menulist">
+                <li class="menulink"><a href="./../accueil.html">A propos de moi</a></li>
+                <li class="menulink dropdown">
+                    <a href="./../annee1/page.html" class="dropbtn">Première année de BUT SD</a>
+                    <div class="dropdown-content">
+                        <a href="./../annee1/page.html#SAE">Projets universitaires</a>
+                        <a href="./../annee1/page.html#annee1">Ressenti de l'année</a>
+                        <a href="./../annee1/page.html#projetsperso">Projets personnels</a>
+                    </div>
+                </li>
+                <li class="menulink dropdown">
+                    <a href="./page.html" class="dropbtn">Deuxième année de BUT SD</a>
+                    <div class="dropdown-content">
+                        <a href="#stage" class="scroll-link">Stage en Finlande</a>
+                        <a href="#SAE2" class="scroll-link">Projets universitaires</a>
+                        <a href="#annee2" class="scroll-link">Ressenti de l'année</a>
+                        <a href="#projetsperso2-anchor" class="scroll-link">Projets personnels</a>
+                    </div>
+                </li>
+                <li class="menulink dropdown">
+                  <a href="./../annee3/page.html" class="dropbtn">Troisième année de BUT SD</a>
+                  <div class="dropdown-content">
+                    <a href="./../annee3/page.html#alternance">Mon Alternance</a>
+                    <a href="./../annee3/page.html#SAE3">Mes projets</a>
+                    <a href="./../annee3/page.html#annee3">Ressenti de l'année</a>
+                  </div>
+                </li>
+                <li class="menulink"><a class="button" href="./../cv.pdf">Télécharger mon CV</a></li>
+            </ul>
+        </div>
+        <div id="globeAndText">
+            <div id="stageText">
+                <h1>
+                    Stage de fin d'année en Finlande
+                </h1>
+        <p >Pour mon <b>stage de fin d'année</b>, j'ai eu l'occasion de voyager en Finlande pour réjoindre le groupe data de l'Université de Turku.
+        Durant mes trois mois dans ce pays, j'ai pu contribuer au développement d'un outil d'analyse statistique des microbiomes.
+    Vous pouvez explorer cet outil par vous même <b><a href="https://microbiome.github.io/">ici</a></b>. C'était une très grande aventure et j'ai pu apprendre
+plein de choses sur la microbiologie, les statistiques et la culture finlandaise. (PS :Vous pouvez tourner le globe qui se trouve à droite à l'aide de votre souris.)</p> 
+        </div>
+            <div id="container"></div>
+            <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js' defer></script>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+        
+            <!-- Include Three.js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+        
+            <!-- Include globe.js -->
+            <script src="./../scripts/globe.js" defer></script>
+          </div>
+    </section>
+
+    <section id="bigger-SAE2">
+    <section id="SAE2">
+      <H1>Mes projets universitaires réalisés</H1>
+      <main>
+        <ul class='slider'>
+          <li class='item' style="background-image: url('./projets/images/R-shiny.png');">
+            <div class='content'>
+              <h2 class='title'>Reporting d'une analyse multivariée</h2>
+              <p class='description'> Pour les instances gouvernementales ainsi que les entreprises, la possibilité de partager des tableaux de bord en ligne pour 
+                afficher des graphiques devient de plus en plus cruciale. En raison de cela, j'ai passé une semaine à créer un tableau de bord 
+                prêt à être déployé en ligne, axé sur la pauvreté en France, en particulier celle des jeunes.
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Comprendre l’intérêt des analyses multivariées pour synthétiser et résumer l’information portée par plusieurs variables. </li>
+                    <li>Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats.</li>
+                </ul>
+              </p>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('./projets/images/besoin-territoire.jpg')">
+            <div class='content'>
+              <h2 class='title'>Répondre aux besoins du territoire</h2>
+              <p class='description'> La formation du but SD collabore avec des autres structures et instances proche de Niort.
+                Afin de favoriser l'insertion professionnelle des étudiants tout en mettant en lumière le pouvoir des données aux structures voisinantes.
+                J'ai donc eu l'occassion de donner des cours de développement web à des élèves de 1ère du lycée Jean Macé.
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Comprendre les enjeux des relations en milieu professionnel adaptées à l’interlocuteur et à sa culture. </li>
+                  <li>Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos. </li>
+                </ul>
+              </p>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('./projets/images/RLM.png')">
+            <div class='content'>
+              <h2 class='title'>Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs</h2>
+              <p class='description'> Cette année fut l'introduction au machine learning. 
+                J'ai donc réaliser plusieurs algorithmes capables de prédire de manière plus ou moins précise le prix d'une maison en Californie. </p>
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Comprendre l'impact du type de données sur le choix de la modélisation à mettre en œuvre. </li>
+                    <li>Apprécier les limites de validité et les conditions d'application d'un modèle.</li>
+                </ul>
+              <a href="./projets/RLM.pdf">Découvrir</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('./../annee2/projets/images/RGPD.avif')">
+            <div class='content'>
+              <h2 class='title'>Conformité réglementaire pour traiter/analyser des données</h2>
+              <p class='description'>
+                La quantité de données qui existe accroit de 30 % chaque année, d'où la necessité de reglementer la recolte et l'utilisation des données.
+                J'ai donc eu à réaliser un document qui instruit une entreprise comment respecter les normes imposées par la reglémentation européenne.
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos. </li>
+                    <li>Comprendre les enjeux des relations en milieu professionnel adaptées à l’interlocuteur et à sa culture.</li>
+                </ul>
+              </p>
+              <a href="./projets/rgpd.pdf">Découvrir</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('./projets/images/series\ temp.jpg')">
+            <div class='content'>
+              <h2 class='title'>Description et prévision de données temporelles</h2>
+              <p class='description'>
+                Une grande partie des données existantes possède une dimension temporelle qu’il est essentiel de prendre en compte, ce qui nécessite des techniques d’analyse spécifiques.
+Dans ce cadre, le Bureau of Labor Statistics des États-Unis met à disposition une vaste quantité de données. J’ai ainsi eu pour mission d’analyser et de prévoir l’évolution du taux de chômage dans l’État de l’Oklahoma.
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Saisir la spécificité de l’analyse des données temporelles. </li>
+                    <li>Comprendre les spécificités des données complexes et de leur exploitation.</li>
+                </ul>
+              </p>
+              <a href="./projets/series-temp.pdf">Découvrir</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('./projets/images/datawarehouse.png')">
+            <div class='content'>
+              <h2 class='title'>Intégration des données dans un datawarehouse </h2>
+              <p class='description'> La complexité des données ainsi que sa demande ne cesse d'évoluer et il faut donc des systèmes robustes capables d'héberger autant de données
+                tout en restant facilement accessibles. Il existe donc la structuration en datawarehouse permettant un stockage éfficace et j'ai eu à réaliser une telle structuration des données avec trois autres étudiants. 
+                <h4>
+                  Apprentissages critiques :
+                </h4>
+                <ul>
+                  <li>Identifier les solutions technologiques permettant la collecte et la diffusion de données. </li>
+                    <li>Savoir mener une veille technologique.</li>
+                </ul>
+               </p>
+              <a href="./projets/Rapport datawarehouse.pdf">Découvrir</a>
+            </div>
+          </li>
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+      </section>
+      </section>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </section>
+
+
+
+    <section id="annee2">
+
+      <h1>Un Voyage d'apprentissage et de développement : ma deuxième année en BUT</h1>
+    
+    
+      <p>
+        Ma deuxième année en BUT Science des données a été une période marquante et riche en expériences, 
+        défilant à une <b>vitesse fulgurante. </b> Dans les paragraphes suivants, je discuterai des défis initiaux, 
+        de la <b>décision cruciale </b> qui a transformé ma perception du temps passé dans ce cursus, des apprentissages 
+        et découvertes, pour conclure avec les perspectives que j’envisage pour ma dernière année en BUT.
+      </p>
+        <br> <br>
+        
+       <p>
+        Il est essentiel de souligner que j’ai terminé ma première année en BUT SD avec la détermination de relever de <b>nouveaux 
+        défis.</b> Dans cet esprit, j’ai intégré Territoria Mutuelle en tant que <b>Gestionnaire prévoyance </b>sous contrat étudiant. 
+        Cette décision m’a amené à travailler chaque samedi au sein de cette structure, sans vraiment anticiper la charge de travail
+        qui m’attendait pour l’année à venir. Au début de l’année scolaire, j’ai rencontré d’importantes <b>difficultés à trouver un
+        équilibre</b> me permettant de disposer de temps pour moi-même, sans devoir travailler en continu. Pour préserver ma santé 
+        mentale et physique, j’ai donc décidé de ne plus chercher à dépasser les attentes en cours ou dans les projets à chaque 
+        occasion.
+        <br> <br>
+
+        Cette première <b>décision</b> a rapidement été suivie d’une seconde, peut-être encore <b>plus significative.</b> 
+        Ayant obtenu d’excellents résultats en première année, la possibilité d’intégrer une <b>école d’ingénieurs </b> s’ouvrait à moi, 
+        et j’étais persuadé que c’était la voie à suivre le plus rapidement possible. Cependant, au fil de l’année, j’ai réalisé 
+        qu’il était nécessaire de cesser de toujours vouloir atteindre mes objectifs à la hâte et de profiter du temps passé en BUT. 
+        J’ai compris qu’il était crucial de <b>prendre du recul</b> par rapport à mes aspirations et de <b>savourer mon temps dans cette 
+        formation. </b> J’ai alors décidé de postuler pour une école d’ingénieurs après avoir terminé la formation complète, et non après 
+        la deuxième année. Après tout, je ne me suis <b>jamais senti aussi apprécié</b> qu’en BUT SD, tant par les autres étudiants que par 
+        l’équipe pédagogique.
+
+        <br><br>
+  
+        Pour <b>manifester ma reconnaissance</b> envers les personnes qui m’entourent dans cette formation, 
+        j’ai également beaucoup aidé les autres étudiants en difficulté. Désirer <b>faire plaisir aux autres</b> et leur donner le 
+        sourire est un <b>trait de caractère</b> que je cultive depuis mon enfance et qui semble enfin porter ses fruits. 
+        Il s’avère que je suis un excellent pédagogue. En effet, sans m’en rendre compte, l’aide que j’apporte à mes camarades 
+        m’a permis de développer mes <b>compétences d’explication et de vulgarisation.</b> J’ai renforcé cette aptitude en prenant en 
+        charge des cours de soutien en programmation pour les premières années de BUT Science des données ainsi que des cours de 
+        développement web pour des lycéens de première. Le bilan de ces expériences a été très positif et m’encourage à <b>persévérer 
+        dans la pédagogie</b> l’année prochaine et dans ma future carrière.
+    
+        <br> <br>
+    
+        Pour ma dernière année, j’aimerais poursuivre sur cette voie positive et continuer à aider les autres. 
+        Selon moi, si à la fin du BUT je n’ai pas tous mes amis à mes côtés et que nous n’avons pas réussi à <b>surmonter ensemble 
+        les obstacles de la formation,</b> je ressentirais un certain vide. J’aimerais même aller au-delà de simplement aider les 
+        autres en donnant des cours supplémentaires. En effet, comme vous pouvez le voir dans la partie ci-dessous, 
+        je réalise des <b>projets de data science en dehors des cours</b> et j’aimerais partager mes connaissances avec les autres en 
+        <b>organisant des cours les jeudis après-midi,</b> car généralement nous n’avons pas de cours durant cette partie de la journée.
+        <br><br>
+    
+        En résumé, ma deuxième année a été une période bouleversante, riche en expériences qui ont non seulement 
+        permis de <b>développer mes compétences,</b> mais aussi de <b>forger ma personnalité.</b>
+          
+    
+      </p>
+      <hr>
+    </section>
+    <h1 id="projetsperso2-anchor"> Mes projets personnels de deep learning</h1>
+    <h4>⚠️  <i>Note : la compréhension des fichiers téléchargeables via les boutons "Découvrir" nécessite une bonne maîtrise de Python et des réseaux de neurones. </i> </h4>
+    
+    <section id="projetsperso2">
+        <div class = "card-container">
+        <div class = "card reveal">
+            <img src="images/classif-foot.png" alt="">
+            <div class="card-content">
+              <h2>
+                <b>Clustering des clubs de foot saison 2023/2024</b>
+                <hr>
+                <br/>
+              </h2>
+              <p>
+                
+                <b>En utilisant une base de données contenant tout les résultats de foot en Europe pour la saison 2023/2024. 
+                  J'ai regroupé les équipes des plus grandes compétitions de l'Europe en trois différentes classes : bas de l'échelle, médiocre et invincible. 
+                  Mon club préféré qui est le PSV Eindhoven est bien sûr invincible.
+                  </b>
+                  <br/>
+              </p>
+              <div class="btn-projetsperso2-container">
+                <a class="btn-projetsperso2" href="https://public.flourish.studio/visualisation/18305453/">Découvrir<span></span></a>
+            </div>
+            </div>
+        </div>
+
+        <div class = "card reveal">
+          <img src="images/classif-tumeur.png" alt="">
+          <div class="card-content">
+            <h2>
+              <b>Clustering des types de tumeur à partir d'images</b>
+              <hr>
+              <br/>
+            </h2>
+            <p>
+              
+              <b>Cette année, je me suis intéressé aux réseaux de neurones convolutionnels. 
+                Ces réseaux permettent de traiter des images en utilisant l'intelligence artificielle.
+                Pour ce projet j'ai utilisé mes connaissances pour automatiser le diagnostic de tumeurs avec cette technologie.
+                </b>
+                <br/>
+            </p>
+            <div class="btn-projetsperso2-container">
+              <a class="btn-projetsperso2" href="./projets/tumor-classification.html">Découvrir<span></span></a>
+          </div>
+          </div>
+      </div>
+
+      <div class = "card reveal">
+        <img src="images/classif-sarcasm.png" alt="">
+        <div class="card-content">
+          <h2 class="besoin-margin">
+            <b>Détection de sarcasme</b>
+            <hr>
+            <br/>
+          </h2>
+          <p>
+            
+            <b>Afin de préparer pour mon alternance de troisième année d'études qui va être consacré au traitement de texte écrit, 
+              j'ai découvert le monde de de la NLP (natural language processing) en implementant un détecteur de sarcasme.
+              </b>
+              <br/>
+          </p>
+          <div class="btn-projetsperso2-container">
+            <a class="btn-projetsperso2" href="./projets/sarcasm-classification.html">Découvrir<span></span></a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    </section>
+    <a href="#" class="slider-button"></a>
+    <footer class="footer">
+
+      <h3>Contactez-moi :</h3>
+  
+      <div class="footer-wrapper">
+      <div class ="footer-column">
+        
+        <a href="mailto:noah.de.gunst@etu.univ-poitiers.fr">
+          <img src="./../images/icones/gmail.png" alt="e-mail"> 
+          <span>noah.de.gunst@etu.univ-poitiers.fr</span>
+        </a>
+  
+      </div>
+  
+      <div class ="footer-column">
+        
+        <a href="tel:0638056358">
+          <img src="./../images/icones/phone.png" alt="phone"> 
+          <span>06-38-05-63-58</span>
+        </a>
+  
+      </div>
+      <div class ="footer-column">
+        
+        <a href="https://www.linkedin.com/in/noah-de-gunst-663b00209/">
+          <img src="./../images/icones/linkedin.png" alt="linkedin">
+          <span>Noah de Gunst</span>
+        </a>
+      </div>
+      </div>
+    </footer>
+        
+    
+        
+   
+</body>
+</html>

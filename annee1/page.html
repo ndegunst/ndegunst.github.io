@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Première année</title>
+    <link rel="stylesheet" type="text/css" href="./../style.css">
+	<link rel="icon" href="./../logo-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="preconnect">
+	<script defer src="./../scripts/scroll-animation.js"></script>
+	<script src="./../scripts/slideshow.js" defer></script>
+	<script src="./../scripts/followMouse.js" defer></script>
+	<script  src="./../scripts/sliderButton.js" defer></script>
+	<script src="./../scripts/scroll-animation-submenu.js" defer></script>
+</head>
+<body>
+	<div class="bg_green">
+		<div class="head">
+			<div class="scrollmenu">
+			  <ul class="menulist">
+				<li class="menulink"><a href="./../accueil.html">A propos de moi</a></li>
+				<li class="menulink dropdown">
+				  <a href="./page.html" class="dropbtn">Première année de BUT SD</a>
+				  <div class="dropdown-content">
+					<a href="#SAE" class="scroll-link">Projets universitaires</a>
+					<a href="#annee1" class="scroll-link">Ressenti de la première année</a>
+					<a href="#projetsperso" class="scroll-link">Projets personnels</a>
+				  </div>
+				</li>
+				<li class="menulink dropdown">
+					<a href="./../annee2/page.html" class="dropbtn">Deuxième année de BUT SD</a>
+					<div class="dropdown-content">
+						<a href="./../annee2/page.html#stage">Stage en Finlande</a>
+						<a href="./../annee2/page.html#SAE2">Projets universitaires</a>
+						<a href="./../annee2/page.html#annee2">Ressenti de l'année</a>
+						<a href="./../annee2/page.html#projetsperso2-anchor">Projets personnels</a>
+					</div>
+				</li>
+				<li class="menulink dropdown">
+					<a href="./../annee3/page.html" class="dropbtn">Troisième année de BUT SD</a>
+					<div class="dropdown-content">
+						<a href="./../annee3/page.html#alternance">Mon Alternance</a>
+						<a href="./../annee3/page.html#SAE3">Mes projets</a>
+						<a href="./../annee3/page.html#annee3">Ressenti de l'année</a>
+					</div>
+				</li>
+				<li class="menulink"><a class="button" href="./../cv.pdf">Télécharger mon CV</a></li>
+			  </ul>
+			</div>
+		  </div>
+
+
+
+	<section class="STID" id ="SAE">
+		<H1>Mes projets réalisés en BUT SD</H1>
+
+		<section class="carousel-wrapper">
+			<div class="carousel" data-carousel>
+				<button class="carousel-button prev" data-carousel-button="prev"> &#8619;</button>
+				<button class="carousel-button next" data-carousel-button="next">&#8620;</button>
+				<div class="slide-container">
+					<ul data-slides>
+						<li class="slide" data-active>
+							<img src="./images/nantes.png" class="slide-image" alt="Présentation de Nantes">
+							<div class="download-container">
+								<a href="./fichiers/Présentation Nantes.pptx" download>Télécharger</a>
+							  </div>
+							<div class="slide-text">
+								<h3>Présentation d'un territoire économique et culturel</h3>
+								<p class="responsive-hide">J'ai réalisé une <b>présentation </b> du territoire économique et culturel de Nantes <b>en anglais.</b>
+									Cette présentation a mise en avant les différents atouts de la région, notamment son patrimoine
+									culturel, ses entreprises et son dynamisme économique. <br> <br>
+									<b>Technologies utilisés : </b> Word et Powerpoint <br> <br>
+									<b>apprentissage critique : </b> 
+									Mesurer l’importance d’une expression précise et nuancée dans la communication en français et dans une langue
+									étrangère des résultats.</p>
+							</div>
+					</li>					
+					<li class="slide">
+						<img src="./images/JsonACSV.png" class="slide-image" alt="Json à csv">
+						<div class="download-container">
+							<a href="./fichiers/transformerJsonToCsv.html" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Gestion de fichiers</h3>
+						  <p class="responsive-hide">J'ai créé un outil pour  <b>convertir des fichiers JSON en CSV</b>, ce qui a mis en valeur mes 
+							compétences en informatique telles que la <b>maîtrise de la syntaxe des langages de programmation. </b> <br> <br>
+							<b>Technologies utilisés : </b> Python, Jupyter Notebook, Pandas et Numpy <br> <br>
+							<b>apprentissages critiques </b> : 
+							<ul class="responsive-hide apprentisages">
+
+								<li> Comprendre les structures algorithmiques de base et leur contexte d’usage. </li>
+								<li>Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...).</li>
+							</ul>
+							</p>
+
+
+						  </p>
+						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/TauxCroissanceVillePlotly.png" class="slide-image" alt="production en entreprise">
+						<div class="download-container">
+							<a href="./fichiers/La Seine Saint Denis de Gunst.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Apprendre en situation la production de données en entreprise</h3>
+						  <p class="responsive-hide">Ceci est une présentation d'une <b>analyse de données exploratoire </b> simple portant sur la population de la Seine-Saint-Denis sous forme de pdf<br> <br>
+							<b>Technologies utilisés : </b> Python (Pandas, Numpy, Matplotlib, Seaborn et Plotly) et Word <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li> Identifier l’importance de contextualiser ses données.</li>
+								<li> Comprendre les intérêts de la data visualisation et de l’infographie </li>								</li>
+						</ul></p>
+
+						  </p>
+						  
+						</div>
+					  </li>
+
+					  
+					  <li class="slide">
+						<img src="./images/questionnaire.png" class="slide-image" alt="questionnaire">
+						<div class="download-container">
+							<a href="./fichiers/Word questionnaire.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Mise en œuvre d'une enquête</h3>
+						  <p class="responsive-hide">Grâce à mes compétences acquises en cours, j'ai réalisé le <b>questionnaire d'une enquête </b> destiné aux étudiants afin de mieux connaître leurs habitudes quant au repas du midi.<br> <br>
+							<b>Technologies utilisés : </b> Le sphinx <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li> Identifier l’importance de contextualiser ses données.</li>
+								<li> Mesurer l’importance d’une expression précise et nuancée dans la communication en français. </li>								
+						</ul></p>
+
+						  </p>
+						  
+						</div>
+					  </li>
+
+
+					  <li class="slide">
+						<img src="./images/analyse données.png" class="slide-image" alt="Analyse de données">
+						<div class="download-container">
+							<a href="./fichiers/SAE analyse exploratoire Chassé de Gunst.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Tableau de données et analyse exploratoire simple</h3>
+						  <p class="responsive-hide">Compte rendu des résultats d'une étude mené portant sur les étudiants niortais et l'utilisation de leurs portables. <br> <br>
+							<b>Technologies utilisés : </b> Word et le Sphinx <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li> Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique.</li>
+								<li> l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+						</ul></p>
+
+						  </p>
+						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/reporting.gif" class="slide-image" alt="Json à csv">
+						<div class="download-container">
+							<a href="./fichiers/reporting Bonneau de Gunst.zip" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Création d'un réporting</h3>
+						  <p class="responsive-hide">Création d'un reporting permettant à un <b>étudiant en science des données </b> d'entrer ses notes
+							pour que le logiciel <b>calcule précisément sa moyenne pondérée pour chacune des trois compétences. </b>
+							Le logiciel indiquera alors si l'élève passe en deuxième année ou non. <br> <br>
+							<b>Technologies utilisés : </b> Excel et VBA <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li> Connaître la syntaxe des langages et savoir l’utiliser.</li>
+								<li> l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/BDR.png" class="slide-image" alt="base de données">
+						<div class="download-container">
+							<a href="./fichiers/concep et imp BDR.zip" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Conception et implémentation d'une base de données</h3>
+						  <p class="responsive-hide">Création d'une <b>interface graphique </b>permettant de créer et alimenter une base de données
+							puis d'exécuter des <b>requêtes SQL </b>sur cette base de données. <br> <br>
+							<b>Technologies utilisés : </b> Python (Tkinter et Pandas) et SQL <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li> Correctement interpréter et prendre en compte le besoin du commanditaire ou du client.</li>
+								<li> Réaliser que les sources de données ont des caractéristiques propres à considérer.</li>
+								<li>Prendre conscience de l’intérêt de la programmation.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/régression données réelles.png" class="slide-image" alt="base de données">
+						<div class="download-container">
+							<a href="./fichiers/Rapport SAE regression linéaire de Gunst.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Régression linéaire sur données réelles</h3>
+						  <p class="responsive-hide">J'ai effectué une <b>prédiction des prix</b> de maisons situés en Nouvelle-Aquitaine
+							en utilisant mes cours de <b> régression linéaire</b> et un <b>arbre de décision.</b> <br> <br>
+							<b>Technologies utilisés : </b> Python et R <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li>Prendre conscience de l’intérêt de la programmation.</li>
+								<li>Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+								<li>Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/indicateurs de performances.png" class="slide-image" alt="concours dataviz">
+						<div class="download-container">
+							<a href="./fichiers/SAE indicateurs perfo.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Construction et présentation d’indicateurs de performances</h3>
+						  <p class="responsive-hide"> Afin de mettre en valeurs mes <b>compétences en économie et en gestion </b>,
+							j'ai été mené à analyser l'évolution de la comptabilité du laboratoire science et nature. </b> <br> <br>
+							
+							<b>Technologies utilisés : </b> Excel et Word <br> <br>
+							<b>apprentissages critiques : </b>
+							<ul class="responsive-hide apprentisages"> 
+								<li>Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+								<li>Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique.</li>
+							</ul></p>						  
+						</div>
+					  </li>
+						
+					  <li class="slide">
+						<img src="./images/echantillonage.png" class="slide-image" alt="base de données">
+						<div class="download-container">
+							<a href="./fichiers/rapport echantillonage de Gunst.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Echantillonnage et estimation</h3>
+						  <p class="responsive-hide">J'ai effectué une <b>estimation de la population </b>de la région Normande en tirant 
+							un <b>échantillon</b>  de communes. <br> <br>
+							<b>Technologies utilisés : </b> R, Excel et SAS <br> <br>
+							<b>apprentissages critiques : </b> 
+							<ul class="responsive-hide apprentisages"> 
+								<li>Prendre conscience de l’intérêt de la programmation.</li>
+								<li>Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+								<li>Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/concours dataviz.png" class="slide-image" alt="concours dataviz">
+						<div class="download-container">
+							<a href="./fichiers/CONCOURS DATAVIZ - Julian Noah Victor Quentin AxelD.pdf" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>concours Dataviz</h3>
+						  <p class="responsive-hide">Lors du concours dataviz, j'ai crée un dashboard interactif à partir de données de la SNCF. Le dataviz a été classé <b>premier du departement science des données de Niort. </b> <br> <br>
+							
+							<b>Technologies utilisés : </b> Power BI <br> <br>
+							<b>apprentissages critiques : </b>
+							<ul class="responsive-hide apprentisages"> 
+								<li>Comprendre les intérêts de la data visualisation et de l’infographie.</li>
+								<li>Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+
+					  <li class="slide">
+						<img src="./images/reporting et dataviz.png" class="slide-image" alt="concours dataviz">
+						<div class="download-container">
+							<a href="./fichiers/SAE Chasse Dagnaud de Gunst Shaaban.zip" download>Télécharger</a>
+						  </div>
+						<div class="slide-text">
+						  <h3>Analyse de données, Reporting et Datavisualisation</h3>
+						  <p class="responsive-hide">Le dernier projet de première année de BUT Science des données était un projet de groupe. En appliquant la <b>méthode scrum</b>,
+							nous avons créées une application <b>facilitant le recrutement du groupe IMA.  </b> <br> <br>
+							
+							<b>Technologies utilisés : </b> Excel et VBA <br> <br>
+							<b>apprentissages critiques : </b>
+							<ul class="responsive-hide apprentisages"> 
+								<li>Correctement interpréter et prendre en compte le besoin du commanditaire ou du client.</li>
+								<li>Comprendre les intérêts de la data visualisation et de l’infographie.</li>
+								<li>Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie.</li>
+								<li>Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents.</li>
+						</ul></p>						  
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<div class="page-numbers">
+				  </div>
+			</div>
+		</section>
+	</section>
+</div>
+
+<section id="annee1">
+
+	<h1>Mon ressenti de la première année du BUT science des données</h1>
+
+
+	<p>
+		Ma première année en BUT science des données à Niort a été une année qui m’a 
+		beaucoup marquée, avec un <b>bilan très positif</b>.
+		En effet, cette année a bouleversé ma vie, que ce soit sur le plan scolaire, 
+		personnel ou social. Dans cet écrit, je vais vous exposer mes premières impressions lors de mon intégration dans la formation,
+		ainsi que mes succès, les obstacles que j'ai rencontrés, les leçons que j'ai pu tirer de cette année et mes perspectives 
+		pour l'année à venir.
+
+		<br> <br>
+
+		Avant de venir à Niort pour mes études, j'étais assailli de <b>doutes et d'incertitudes</b>,
+		notamment quant à mes propres capacités et compétences. 
+		J'avais récemment traversé une période difficile dans ma vie personnelle qui a laissé une profonde empreinte  sur moi.
+		Même si j'avais <b>déjà acquis</b> quelques <b>compétences</b> en science des données, 
+		je me considérais encore comme un débutant. Je craignais donc de ne pas être à la hauteur des exigences de cette formation,
+		sachant qu'elle diffère considérablement de ma précédente licence en informatique. Malgré ces difficultés, 
+		mon travail acharné et ma <b>détermination</b> à réussir dans mes études ont fait de cette première année 
+		un <b>véritable triomphe</b>, avec d'excellents résultats académiques à la clé.
+
+		<br> <br>
+
+		En réalité, grâce aux bases solides que j'ai pu acquérir de manière <b>autodidacte</b>, 
+		j'ai obtenu des résultats remarquables sur le plan académique, ayant étudié plusieurs des matières de cette 
+		année bien avant d’intégrer la formation. Ces connaissances acquises au préalable m'ont permis de facilement suivre 
+		le rythme de la formation et de aisément comprendre les concepts abordés. 
+		De plus, les projets de groupe ont été l’occasion de développer  mes <b>capacités de communication
+		et de travail en équipe</b>, me permettant non seulement de renforcer mes compétences interpersonnelles, 
+		mais également de créer des liens solides avec mes collègues, dont certains sont devenus des amis proches sur 
+		lesquels je peux compter. Ainsi, le BUT science des données m'a d’une part enseigné des <b>compétences techniques et des 
+		valeurs professionnelles</b>, et d’autre part, 
+		il m'a offert une plateforme qui m’a permis de créer et de <b>consolider mon réseau.</b>  
+
+		<br><br>
+
+		Quant à mes réussites, un de mes plus grands succès cette année a été de partager mes connaissances avec mes collègues. 
+		Au cours de l'année, j'ai pu soutenir des étudiants en difficulté, notamment en programmation. 
+		Ce rôle de mentor m'a permis de développer mes <b>compétences pédagogiques</b> 
+		et de renforcer ma propre compréhension des concepts clés. 
+		Voir les progrès réalisés par mes pairs grâce à mon aide a été particulièrement épanouissant. 
+		Cependant, au cours de cette année, j'ai dû aussi faire face à plusieurs obstacles et défis. 
+		A cause de mon <b>perfectionnisme</b> et de ma volonté d’en faire trop, notamment lors des projets universitaires, 
+		Il m'arrivait de travailler pendant de longues heures, tard dans la nuit afin de mettre en oeuvre une idée 
+		spécifique que j'avais en tête, en me surpassant, pour arriver aux meilleurs résultats. 
+		Ainsi, j'ai appris qu'il est important de trouver un <b>équilibre entre l'excellence et le bien-être personnel.</b> 
+		Je peux dorénavant reconnaître mes limites et me ménager pour éviter l'épuisement professionnel.
+
+		<br> <br>
+
+		Malgré cet obstacle, j'ai énormément appris au cours de ma première année en BUT science des données. 
+		Tout d'abord, j'ai consolidé mes <b>compétences en programmation et en programmation statistique, </b>
+		ce qui m'a permis de maîtriser le <b>traitement de grandes quantités de données</b> dans différents langages tels que 
+		Python, SAS et R, mais aussi sur différents logiciels comme Excel et Power BI. 
+		J'ai acquis la capacité d'analyser les données avec précision et de les représenter de manière claire et visuellement 
+		attrayante à l'aide de <b>graphiques et de visualisations</b>, afin qu'elles soient facilement compréhensibles pour tous les publics. De plus, j'ai développé mes compétences en communication, tant en français qu'en anglais.
+		La science des données demande la capacité de transmettre efficacement les idées clés derrière une analyse statistique, 
+		que ce soit à des collègues, des clients ou des décideurs. J'ai appris à présenter mes résultats de manière claire, 
+		concise et persuasive, en utilisant des <b>techniques de narration</b> et des supports visuels adaptés. Enfin, j'ai également 
+		perfectionné mes compétences en <b>rédaction de documents professionnels</b>. J'ai appris à rédiger des rapports techniques</b> et des 
+		présentations percutantes Cela grâce aux connaissances et aux compétences que j’ai acquises durant cette première année en BUT science des données,
+		cela m'a permis de développer ma capacité à <b>communiquer de manière claire et concise</b>, tout en démontrant ma rigueur méthodologique et mes <b>capacités d'analyse critique.</b>
+
+		<br><br>
+
+		En résumé, ma première année en BUT science des données à Niort a été une <b>expérience transformatrice.</b> 
+		J'ai surmonté mes doutes et mes incertitudes pour atteindre d'excellents résultats académiques.
+		J'ai consolidé mes compétences techniques, j’ai noué des liens sociaux et j’ai affûté ma capacité à partager mes 
+		connaissances. J'ai également appris à gérer mon perfectionnisme et à trouver un équilibre entre l'excellence et le bien-être personnel.
+		Je dirais pour conclure que je suis <b>impatient de continuer</b> mon parcours au sein de cette formation. 
+		Le bon déroulement de cette année ainsi que mes résultats solides m'ont confortés dans mon choix de 
+		m'engager dans ce domaine en intégrant ce BUT.
+		  
+
+	</p>
+	
+</section>
+
+
+
+
+
+
+<section id="projetsperso" >
+
+	<h1>Au cours des deux dernières années j'ai pu réaliser des projets personnels de dataviz. Voici-en quelques uns :</h1>
+	<h4 style="color: #f5f5f5;">⚠️ Note : la compréhension des fichiers téléchargeables via les boutons "Découvrir" nécessite une bonne maîtrise de Python.</h4>
+
+	<div class="project-cards">
+	<div class = "card-container">
+		<div class = "card reveal">
+		  <div class = "card-image">
+				<img href = "#" src ="./images/stroke.png">
+					
+		  </div>
+		  <h3>AVC</h3>
+		  <div class = "card-content">
+
+			<p>J'ai étudié la corrélation entre le risque d'AVC et certains comorbidités tel que les problèmes de coeur
+				afin de concevoir un modèle permettant de prédire si quelqu'un est susceptible de faire un AVC.
+			</p>
+			<div class="download-container">
+				<a href="./fichiers/stroke.html" download>Découvrir</a>
+			  </div>
+		  </div>
+		</div>
+		<div class = "card reveal">
+			<div class = "card-image">
+			  <img src ="./images/covid.png">
+			</div>
+			<h3>COVID</h3>
+			<div class = "card-content">
+			  
+			  <p>Durant la période du COVID, il était nécessaire d'analyser des données liés à la pandémie. J'ai donc cartographier
+				différents statistiques lié au COVID-19.
+			  </p>
+			  <div class="download-container">
+				<a href="./fichiers/covid.html" download>Découvrir</a>
+			  </div>
+			</div>
+		  </div>   
+		  <div class = "card reveal">
+			<div class = "card-image">
+			  <img src ="./images/FIFA.png">
+			</div>
+			<h3>FIFA</h3>
+			<div class = "card-content">
+			  
+			  <p>Etant fan de football et du jeu FIFA, j'ai analysé les différents statistiques liés aux joueurs présents dans le jeu.
+			  </p>
+			  <div class="download-container">
+				<a href="./fichiers/FIFA.html" download>Découvrir</a>
+			  </div>
+			</div>
+		  </div>      
+	  </div>
+	  </div>
+
+</section>
+
+	<a href="#" class="slider-button"></a>
+	<footer class="footer">
+
+		<h3>Contactez-moi :</h3>
+
+		<div class="footer-wrapper">
+		<div class ="footer-column">
+			
+			<a href="mailto:noah.de.gunst@etu.univ-poitiers.fr">
+				<img src="./../images/icones/gmail.png" alt="e-mail"> 
+				<span>noah.de.gunst@etu.univ-poitiers.fr</span>
+			</a>
+
+		</div>
+
+		<div class ="footer-column">
+			
+			<a href="tel:0632056358">
+				<img src="./../images/icones/phone.png" alt="phone"> 
+				<span>06-38-05-63-58</span>
+			</a>
+
+		</div>
+		<div class ="footer-column">
+			
+			<a href="https://www.linkedin.com/in/noah-de-gunst-663b00209/">
+				<img src="./../images/icones/linkedin.png" alt="linkedin">
+				<span>Noah de Gunst</span>
+			</a>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

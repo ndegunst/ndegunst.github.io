@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troisième année</title>
+    <link rel="icon" href="./../logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./../style.css">
+    <script src="./../scripts/scroll-animation.js"></script>
+    <script src="./../scripts/scroll-animation-submenu.js" defer></script>
+    <script  src="./../scripts/sliderButton.js" defer></script>
+    <script src="./../scripts/followMouse.js" defer></script>
+    <script src="./../scripts/SAE-annee2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pug/3.0.2/pug.min.js"></script>
+    <script src="./../scripts/music.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="./../scripts/vanta.birds.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.BIRDS({
+        el: "#annee3",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0xf5f5f5,
+        color1: 0xb4fdc0,
+        color2: 0x4f9659,
+        colorMode: "lerp",
+        birdSize: 1.00,
+        wingSpan: 30.00,
+        separation: 51.00,
+        alignment: 67.00,
+        cohesion: 100.00,
+        quantity: 3.00
+      });
+    });
+  </script>
+
+</head>
+<body>
+    <script>$(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+      
+   });</script>
+    
+    <section id="alternance">
+        <div class="scrollmenu">
+            <ul class="menulist">
+                <li class="menulink"><a href="./../accueil.html">A propos de moi</a></li>
+                <li class="menulink dropdown">
+                    <a href="./../annee1/page.html" class="dropbtn">Première année de BUT SD</a>
+                    <div class="dropdown-content">
+                        <a href="./../annee1/page.html#SAE">Projets universitaires</a>
+                        <a href="./../annee1/page.html#annee1">Ressenti de l'année</a>
+                        <a href="./../annee1/page.html#projetsperso">Projets personnels</a>
+                    </div>
+                </li>
+                <li class="menulink dropdown">
+                    <a href="./../annee2/page.html" class="dropbtn">Deuxième année de BUT SD</a>
+                    <div class="dropdown-content">
+                        <a href="./../annee2/page.html#stage" class="scroll-link">Stage en Finlande</a>
+                        <a href="./../annee2/page.html#SAE2" class="scroll-link">Projets universitaires</a>
+                        <a href="./../annee2/page.html#annee2" class="scroll-link">Ressenti de l'année</a>
+                        <a href="./../annee2/page.html#projetsperso2-anchor" class="scroll-link">Projets personnels</a>
+                    </div>
+                </li>
+                <li class="menulink dropdown">
+                    <a href="page.html" class="dropbtn">Troisième année de BUT SD</a>
+                    <div class="dropdown-content">
+                        <a href="#alternance" class="scroll-link">Mon alternance</a>
+                        <a href="#SAE3" class="scroll-link">Mes projets</a>
+                        <a href="#annee3" class="scroll-link">Ressenti de l'année</a>
+                    </div>
+                </li>
+                <li class="menulink"><a class="button" href="./../cv.pdf">Télécharger mon CV</a></li>
+            </ul>
+        </div>
+        <div id="imageAndText">
+          <img src="./images/equipeTEM.jpg"
+     class="slide-image"
+     id="TEM"
+     style="height: 40%; width: 40%; margin-left: 5%; margin-top: 5%;" />
+           
+          <div id="alternanceText">
+                <h1>
+                    Mon alternance chez Territoria Mutuelle
+                </h1>
+        <p >Pendant deux ans chez <b>Territoria Mutuelle</b>, spécialisée dans la <b>protection des agents territoriaux</b>, j’ai occupé les postes de Gestionnaire Prévoyance puis de Data Scientist en alternance. Cette expérience m’a permis de mettre en pratique mes compétences techniques tout en développant une bonne compréhension des <b>enjeux métiers</b>.
+
+J’ai notamment conçu une <b>calculatrice métier</b> pour faciliter le travail des gestionnaires, et participé à des projets liés à l’<b>architecture des données</b> et à l’<b>interopérabilité des systèmes</b>.
+        </p> 
+        </div>
+        </div>
+    </section>
+
+    <section id="SAE3">
+      <h1>
+        <br/>
+        <br/>
+        Mes projets de troisième année
+    </h1>
+      <div class="grid">
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/projet\ IMA.png);"></div>
+          <div class="container">
+            <h3>	Mener une étude statistique dans un domaine d'application (projet universitaire)</h3>
+            <div class="desc">À la fin de mon cinquième semestre, j’ai analysé les différents facteurs influençant le nombre d’appels liés à des pannes de véhicules pour l’entreprise IMA. J’ai ensuite tenté de prédire le volume d’appels pour un jour donné.</div>
+            <p>
+              <b>Apprentissages critiques</b> :
+              
+            </p>
+            <ul>
+                <li><p>Comprendre l'intérêt de la problématique métier pour réaliser la modélisation.</p></li>
+                <li><p>Prendre conscience des différences entre les modèles pour choisir le plus adapté.</p></li>
+              </ul>
+            <div class="download-container3">
+							<a href="./projets/Rapport projet statistique IMA.pdf" download>Télécharger</a>
+						  </div>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/chatbot.png);background-size:auto;background-position: center;"></div>
+          <div class="container">
+            <h3>	Création d'un chatbot (projet universitaire)</h3>
+            <div class="desc">Avec la montée en puissance des technologies comme ChatGPT, il devient essentiel de savoir les exploiter efficacement. Dans le cadre d’un projet universitaire, j’ai donc développé un chatbot capable d’interroger une base de données afin de répondre aux questions des sociétaires d’une assurance fictive.</div>
+            <p>
+              <b>Apprentissages critiques</b> :
+              
+            </p>
+            <ul>
+                <li><p>Identifier les solutions technologiques permettant la collecte et la diffusion de données.</p></li>
+                <li><p>Comprendre les mécanismes de bases de l’intelligence artificielle.</p></li>
+              </ul>
+            <div class="download-container3">
+							<a href="https://chatbotoptisecure.streamlit.app/" download>Visionner</a>
+						  </div>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/nosql.png);"></div>
+          <div class="container">
+            <h3>Migration de données vers ou depuis un environnement NoSQL (projet universitaire)</h3>
+            <div class="desc">En troisième année de BUT, j'ai appris à manipuler des bases de données non structurées, notamment avec MongoDB. J'ai également développé les compétences nécessaires pour migrer des données depuis des bases structurées vers des bases non structurées.</div>
+            <p>
+              <b>Apprentissages critiques</b> :
+              
+            </p>
+            <ul>
+                <li><p>Comprendre les spécificités des données complexes et de leur exploitation.</p></li>
+                <li><p>Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes.</p></li>
+              </ul>
+            <div class="download-container3">
+							<a href="./projets/Documentation projet.pdf" download>Télécharger</a>
+						  </div>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/tutorat.png);"></div>
+          <div class="container">
+            <h3>	Tutorat en machine learning</h3>
+            <div class="desc">Tout au long de l’année, j’ai assuré des séances de tutorat, aussi bien pour les étudiants de deuxième que de troisième année, notamment sur des thématiques liées au machine learning.</div>
+            <p>
+              <b>Tutorats assurés</b> :
+              
+            </p>
+            <ul>
+                <li><p>Réseaux de neurones</p></li>
+                <li><p>Analyse en composantes principales</p></li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/birdclef.png);"></div>
+          <div class="container">
+            <h3>	Participation au concours BirdClef</h3>
+            <div class="desc">Chaque année, le site renommé Kaggle, bien connu des data scientists, organise le concours BirdCLEF. Ce défi a pour objectif de détecter les espèces d'oiseaux présentes dans la forêt amazonienne afin de mieux protéger les espèces rares. J’ai choisi de participer à ce concours car il s’inscrit pleinement dans mon projet professionnel : lier la science des données à la santé et à la protection animale.</div>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/wang.png);"></div>
+          <div class="container">
+            <h3>	Classification d'images (projet universitaire)</h3>
+            <div class="desc">Au cours de ma dernière année de BUT, j’ai étudié les réseaux de neurones convolutifs, ce qui m’a conduit à développer un algorithme capable de traiter des images et d’identifier automatiquement leur contenu.</div>
+            <p>
+              <b>Apprentissages critiques</b> :
+              
+            </p>
+            <ul>
+                <li><p>Comprendre les mécanismes de bases de l’intelligence artificielle.</p></li>
+                <li><p>Prendre conscience des différences entre les modèles pour choisir le plus adapté.</p></li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="grid--item">
+          <div class="img" style="background-image: url(./images/donnees\ sante.png);"></div>
+          <div class="container">
+            <h3>	Étude épidémiologique à partir de données PCR (projet universitaire)</h3>
+            <div class="desc">Dans le cadre du BUT, un vétérinaire intervenant nous a proposé un projet concret : analyser des résultats PCR pour identifier deux types de souches virales et en tirer des conclusions épidémiologiques.</div>
+            <p>
+              <b>Apprentissages critiques</b> :
+              
+            </p>
+            <ul>
+                <li><p>Être force de proposition.</p></li>
+                <li><p>Comprendre l'intérêt de la problématique métier pour réaliser la modélisation.</p></li>
+              </ul>
+            <div class="download-container3">
+							<a href="./projets/sante animale.html" download>Télécharger</a>
+						  </div>
+          </div>
+      </div>
+      
+    </section>
+
+    <hr class = "breakline"/>
+    <section id="annee3">
+<h2>
+  Mon parcours en BUT Science des Données : Le Coeur derrière l’écran 
+</h2>
+  <h5>(Cliquez quelque part dans cette section pour accompagner la lecture avec un peu de musique.)</h5>
+
+      <p>
+      Entrez dans la salle info, et observez.
+      Certains rient derrière leurs écrans,
+      d’autres travaillent avec intensité.
+      Comme si chaque ligne de code en dépendait.
+      De mon côté, je cultivais cette <b>soif familière </b>de me dépasser —
+      et parfois, mes efforts suscitaient même des applaudissements.
+      </p>
+      <br/>
+      <p>
+      Je me lève, et déjà quelqu’un me sollicite :
+      Un conseil, un regard, une piste à explorer.
+      Quel plaisir de vous voir progresser, sourire, <b>évoluer au fil de ces six semestres.</b>
+      Je n’ai jamais cherché à occuper une place particulière,
+      mais, sans vraiment m’en rendre compte, j’ai contribué à insuffler une âme à cette promotion.
+      Et bien sûr, vous m’avez inspirés en retour.
+      </p>
+      <br/>
+      <p>
+      Victor, par exemple, m’a poussé à affiner l’esthétique de mon travail.
+      D’autres m’ont soufflé des idées nouvelles,
+      me permettant de réinventer vos projets — et les miens, par effet miroir.
+      </p>
+      <br/>
+      <p>
+      Cette dernière année n’a été que le prolongement
+      de ce que j’avais bâtis à Niort :
+      Une <b>célébration des liens tissés </b> au sein de notre groupe.
+      Malgré quelques tensions ou malentendus,
+      chacun a trouvé sa place,
+      et parfois même, des amitiés précieuses, capables de nous porter loin.
+      </p>
+      <br/>
+      <p>
+      Je repense à ce premier cours de communication,
+      où je me suis présenté devant vous,
+      Exprimant mon envie d’être présent pour chacun, à sa manière.
+      Ma place s’est dessinée progressivement,
+      non pas par un rôle attribué, mais par choix, par engagement.
+      </p>
+      <br/>
+      <p>
+      Il y a eu ces <b>moments complices </b>avec Tom,
+      entre rires sincères et projets menés de front.
+      J’ai toujours admiré sa constance tranquille.
+      Il y a eu aussi ces longues soirées passées à aider Alessandra.
+      Bravo à elle, pour sa résilience, sa volonté de progresser sans jamais se perdre.
+      Les sourires que j’ai pu lui arracher ont été, pour moi,
+      la plus belle récompense du temps investi.
+      </p>
+      <br/>
+      <p>
+      En deuxième année, j’ai partagé avec vous mes difficultés.
+      Je me suis ouvert, parfois sans filtre.
+      Sur le moment, je ne savais pas comment vous réagiriez,
+      mais par la suite… vos regards, vos mots, vos silences pleins de sens ont tout dit.
+      Merci d’avoir, à votre tour, partagé vos vulnérabilités.
+      Elles ont, bien plus que tout, renforcé nos liens.
+      </p>
+      <br/>
+      <p>
+      <b>À Victor et Axel : merci infiniment.</b>
+      Notre équipe, les Datavisionnaires, a toujours dépassé le simple cadre des projets universitaires.
+      Les soirées passées à discuter librement, autour d’un repas,
+      ont nourri ce que j’ai toujours cherché :
+      Une pensée partagée, collective, autour de tables où chacun a sa voix.
+      </p>
+      <br/>
+      <p>
+      C’est vous qui m’avez appris ma vraie valeur.
+      À force de donner de mon énergie pour vous aider, toujours avec enthousiasme,
+      J’en ai parfois oublié de me recentrer sur moi-même.
+      <b>Aujourd’hui, je me tourne vers Noah.</b>
+      Je veux continuer à grandir, à me perfectionner.
+      À l'école d'ingénieur : <b>l’ENSAI</b>, je souhaite affiner mes compétences.
+      Et les mettre au service de ce qui me tient à coeur : les animaux.
+      </p>
+      <br/>
+      <p>
+      Atteindre de nouveaux sommets.
+      Découvrir de nouvelles expériences.
+      Tout en gardant précieusement les souvenirs de ces années partagées —
+      Avec vous, mes camarades du BUT,
+      mes enseignants,
+      mes collègues de Territoria.
+      </p>
+      <br/>
+      <p>
+      Je resterai toujours disponible pour vous.
+      À travers mes conseils, mes compétences techniques,
+      j’espère vous avoir transmis une chose essentielle :
+      Malgré nos différences, nos fragilités, nos parcours uniques,
+      il est possible <b>d’avancer, ensemble, de manière saine et constructive.</b>
+      </p>
+      <br/>
+      <p>
+      C’est ce que je retiens de cette aventure :
+      Le BUT Science des Données, un lieu profondément humain.
+      Je continuerai à transmettre, à partager.
+      En retour, je ne souhaite qu’une chose : vos sourires et des échanges sincères.
+      </p> 
+      <br/>
+      <p>
+      Car se serrer la main n’a de sens
+      que si l’on resserre d’abord les liens.
+      <b>En ouvrant véritablement nos coeurs.</b>
+      </p>
+    
+  </div>
+
+    </section>
+    
+    <a href="#" class="slider-button"></a>
+    <footer class="footer">
+
+      <h3>Contactez-moi :</h3>
+  
+      <div class="footer-wrapper">
+      <div class ="footer-column">
+        
+        <a href="mailto:noah.de.gunst@etu.univ-poitiers.fr">
+          <img src="./../images/icones/gmail.png" alt="e-mail"> 
+          <span>noah.de.gunst@etu.univ-poitiers.fr</span>
+        </a>
+  
+      </div>
+  
+      <div class ="footer-column">
+        
+        <a href="tel:0638056358">
+          <img src="./../images/icones/phone.png" alt="phone"> 
+          <span>06-38-05-63-58</span>
+        </a>
+  
+      </div>
+      <div class ="footer-column">
+        
+        <a href="https://www.linkedin.com/in/noah-de-gunst-663b00209/">
+          <img src="./../images/icones/linkedin.png" alt="linkedin">
+          <span>Noah de Gunst</span>
+        </a>
+      </div>
+      </div>
+    </footer>
+        
+    
+        
+   
+</body>
+</html>
